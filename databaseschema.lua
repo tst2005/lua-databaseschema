@@ -67,7 +67,7 @@ local function genericNext(t, state, genindex)
 
 	-- fetch the next value
 	key = nil
-	for i = 1,table.getn(t.__orderedIndex) do
+	for i = 1,#t.__orderedIndex do
 		if t.__orderedIndex[i] == state then
 			key = t.__orderedIndex[i+1]
 		end
