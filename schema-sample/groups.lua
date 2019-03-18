@@ -8,21 +8,21 @@ schema['groups'] = {
 			['type'] = 'int',
 			['unsigned'] = true,
 			['not null'] = true,
-			['auto increment'] = true			
+			['auto increment'] = true
 		},
 		['name'] = {
 			['description'] = 'Name of the group',
 			['type'] = 'varchar',
 			['not null'] = true,
 			['length'] = '20',
-			['default'] = ''			
+			['default'] = ''
 		},
 		['description'] = {
 			['description'] = 'Group description',
 			['type'] = 'varchar',
 			['not null'] = true,
 			['length'] = '255',
-			['default'] = ''			
+			['default'] = ''
 		}
 	},
 	['primary key'] = 'id'
@@ -42,7 +42,7 @@ schema['groupRoster'] = {
 			['type'] = 'int',
 			['unsigned'] = true,
 			['not null'] = true,
-		},		
+		},
 		['rankId'] = {
 			['description'] = 'Foreign key for rank identifier',
 			['type'] = 'int',
@@ -65,20 +65,20 @@ schema['groupRanks'] = {
 			['type'] = 'int',
 			['unsigned'] = true,
 			['not null'] = true,
-			['auto increment'] = true			
+			['auto increment'] = true
 		},
 		['groupId'] = {
 			['description'] = 'Foreign key for group identifier',
 			['type'] = 'int',
 			['unsigned'] = true,
 			['not null'] = true,
-		},		
+		},
 		['name'] = {
 			['description'] = 'Name of the rank',
 			['type'] = 'varchar',
 			['not null'] = true,
 			['length'] = '20',
-			['default'] = ''			
+			['default'] = ''
 		},
 		['description'] = {
 			['description'] = 'Group description',
@@ -93,14 +93,14 @@ schema['groupRanks'] = {
 			['unsigned'] = true,
 			['not null'] = true,
 			['default'] = 0
-		},	
+		},
 		['spawnGroup'] = {
 			['description'] = 'Identifies which spawngroup members of this rank are in',
 			['type'] = 'int',
 			['unsigned'] = true,
 			['not null'] = true,
 			['default'] = 0
-		}				
+		}
 	},
 	['primary key'] = 'id',
 	['foreign key'] = {

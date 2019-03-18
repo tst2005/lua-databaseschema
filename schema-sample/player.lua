@@ -26,7 +26,7 @@ schema['players'] = {
 	},
 	['primary key'] = 'id'
 }
-	
+
 schema['roles'] = {
 	['description'] = 'Player Roles Definitions',
 	['fields'] = {
@@ -36,7 +36,7 @@ schema['roles'] = {
 			['unsigned'] = true,
 			['not null'] = true,
 			['auto increment'] = true
-			},
+		},
 		['title'] = {
 			['description'] = 'Name of the role for permissions',
 			['type'] = 'varchar',
@@ -44,7 +44,7 @@ schema['roles'] = {
 			['not null'] = true
 		},
 		['description'] = {
-			['description'] =	'Description of this role',
+			['description'] = 'Description of this role',
 			['type'] = 'varchar',
 			['length'] = 255,
 			['not null'] = true,
@@ -85,8 +85,8 @@ schema['permissions'] = {
 			['type'] = 'int',
 			['unsigned'] = true,
 			['not null'] = true,
-			['auto increment'] = true			
-			},
+			['auto increment'] = true
+		},
 		['title'] = {
 			['description'] = 'Description of permission for role',
 			['type'] = 'varchar',
@@ -98,7 +98,7 @@ schema['permissions'] = {
 			['type'] = 'varchar',
 			['length'] = 60,
 			['not null'] = true
-		}	
+		}
 	},
 	['primary key'] = 'id'
 }

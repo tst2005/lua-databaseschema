@@ -8,14 +8,14 @@ schema['characters'] = {
 			['type'] = 'int',
 			['unsigned'] = true,
 			['not null'] = true,
-			['auto increment'] = true			
+			['auto increment'] = true
 		},
 		['playerId'] = {
 			['description'] = 'Foreign key identifier for player',
 			['type'] = 'int',
 			['unsigned'] = true,
 			['not null'] = true,
-		},		
+		},
 		['health'] = {
 			['description'] = 'Characters health',
 			['type'] = 'int',
